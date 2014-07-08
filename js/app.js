@@ -18,8 +18,7 @@ $(document).ready(function() {
         document.getElementById('feedback').innerHTML = "Make your Guess!";
         document.getElementById('resfeed').innerHTML = "";
         document.getElementById('count').innerHTML = 0;
-        // document.getElementById('guessform').reset();        
-        $('#guessform').val('');
+        $('#userGuess').val('');
         // Check and remove any previous guesses
         while (GuessBox.hasChildNodes()) {
             GuessBox.removeChild(GuessBox.lastChild);
@@ -96,7 +95,7 @@ $(document).ready(function() {
 
 
         }
-        $('#guessform').val('');
+        $('#userGuess').val('');
     });
 
 })
